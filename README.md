@@ -1,4 +1,4 @@
-# Fundamentos da Programação
+# Fundamentos
 
 Repositório destinado ao estudo e implementação de fundamentos da programação em múltiplas linguagens, consolidando conceitos teóricos através de códigos executáveis.
 
@@ -19,16 +19,12 @@ Repositório destinado ao estudo e implementação de fundamentos da programaç�
 
 ```text
 fundamentos/
-│
 ├── algoritmos/
-│   │
 │   ├── inverter-numero/
-│   │   ├── teoria.md
-│   │   ├── complexidade.md
-│   │   ├── pseudocodigo.md
-│   │   │
+│   │   ├── README.md
 │   │   └── implementacoes/
 │   │       ├── c/
+│   │       │   ├── invertido4.c
 │   │       │   └── main.c
 │   │       │
 │   │       ├── java/
@@ -100,3 +96,6 @@ Legenda:
 
 * ✅ Implementado
 * ⏳ Pendente
+
+---
+1 Ts 5:18
