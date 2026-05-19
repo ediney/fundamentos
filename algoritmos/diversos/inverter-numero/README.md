@@ -64,18 +64,12 @@ Início
     valor_temp ← valor_inicial
     valor_invertido ← 0
 
-    // O laço vai continuar rodando até que todos os dígitos 
-    // do valor_temp tenham sido processados.
     Enquanto (valor_temp > 0) Faça
         
-        // 1. Pega o último dígito do número atual
         digito ← valor_temp MOD 10
         
-        // 2. "Abre espaço" no valor invertido multiplicando por 10 
-        // e soma o dígito extraído
         valor_invertido ← (valor_invertido * 10) + digito
         
-        // 3. Remove o último dígito do valor temporário
         valor_temp ← valor_temp DIV 10
         
     FimEnquanto

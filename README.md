@@ -20,46 +20,47 @@ Repositório destinado ao estudo e implementação de fundamentos da programaç�
 ```text
 fundamentos/
 ├── algoritmos/
-│   ├── inverter-numero/
-│   │   ├── README.md
-│   │   └── implementacoes/
-│   │       ├── c/
-│   │       │   ├── invertido4.c
-│   │       │   └── main.c
-│   │       │
-│   │       ├── java/
-│   │       │   └── InverterNumero/
-│   │       │       ├── src/
-│   │       │       ├── pom.xml
-│   │       │       └── README.md
-│   │       │
-│   │       ├── javascript/
-│   │       │   └── main.js
-│   │       │
-│   │       ├── typescript/
-│   │       │   ├── src/
-│   │       │   ├── tsconfig.json
-│   │       │   └── package.json
-│   │       │
-│   │       ├── php/
-│   │       │   └── index.php
-│   │       │
-│   │       ├── python/
-│   │       │   └── main.py
-│   │       │
-│   │       ├── csharp/
-│   │       │   └── InverterNumero/
-│   │       │       ├── Program.cs
-│   │       │       ├── InverterNumero.csproj
-│   │       │       └── README.md
-│   │       │
-│   │       └── cobol/
-│   │           ├── src/
-│   │           ├── copybooks/
-│   │           └── README.md
-│   │
-│   ├── bubble-sort/
-│   ├── quick-sort/
+│   ├── diversos/
+│   │   └── inverter-numero/
+│   │       ├── README.md
+│   │       └── implementacoes/
+│   │           ├── c/
+│   │           │   ├── invertido4.c
+│   │           │   └── main.c
+│   │           │
+│   │           ├── java/
+│   │           │   └── InverterNumero/
+│   │           │       ├── src/
+│   │           │       ├── pom.xml
+│   │           │       └── README.md
+│   │           │
+│   │           ├── javascript/
+│   │           │   └── main.js
+│   │           │
+│   │           ├── typescript/
+│   │           │   ├── src/
+│   │           │   ├── tsconfig.json
+│   │           │   └── package.json
+│   │           │
+│   │           ├── php/
+│   │           │   └── index.php
+│   │           │
+│   │           ├── python/
+│   │           │   └── main.py
+│   │           │
+│   │           ├── csharp/
+│   │           │   └── InverterNumero/
+│   │           │       ├── Program.cs
+│   │           │       ├── InverterNumero.csproj
+│   │           │       └── README.md
+│   │           │
+│   │           └── cobol/
+│   │               ├── src/
+│   │               ├── copybooks/
+│   │               └── README.md
+│   ├── ordenacao/
+│   │   ├── bubble-sort/
+│   │   └── quick-sort/
 │   ├── busca-binaria/
 │   └── fibonacci/
 │
