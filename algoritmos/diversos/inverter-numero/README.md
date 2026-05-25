@@ -92,4 +92,123 @@ FimAlgoritmo
 - COBOL
 
 ---
-Pv 16:3
+
+## Como executar cada implementação
+ 
+### C — puro (GCC)
+```bash
+# Compilar e executar (Linux / macOS)
+gcc -o inverterNumero inverterNumero.c
+./inverterNumero
+ 
+# Windows (MinGW)
+gcc -o inverterNumero.exe inverterNumero.c
+inverterNumero.exe
+ 
+# Alternativa com Clang
+clang -o inverterNumero inverterNumero.c
+./inverterNumero
+```
+ 
+---
+ 
+### Java — puro
+```bash
+javac InverterNumero.java
+java InverterNumero
+```
+ 
+### Java — Spring Boot
+```bash
+# Crie um projeto Spring Boot via https://start.spring.io
+# Copie os arquivos para src/main/java/com/exemplo/inverter/
+mvn spring-boot:run
+# GET http://localhost:8080/inverter/4digitos?numero=2548
+# GET http://localhost:8080/inverter/ndigitos?numero=123456789
+```
+ 
+### JavaScript — puro
+```bash
+node inverterNumero.js
+```
+ 
+### JavaScript — Express
+```bash
+npm install express
+node server.js
+# GET http://localhost:3000/inverter/4digitos?numero=2548
+```
+ 
+### TypeScript — puro
+```bash
+npx ts-node inverterNumero.ts
+```
+ 
+### TypeScript — NestJS
+```bash
+npm install @nestjs/common @nestjs/core @nestjs/platform-express
+npx nest start
+# GET http://localhost:3000/inverter/4digitos?numero=2548
+```
+ 
+### PHP — puro (CLI)
+```bash
+php inverterNumero.php
+```
+ 
+### PHP — puro (Web)
+```
+inverterNumero.php?numero=2548&versao=4
+inverterNumero.php?numero=123456789&versao=n
+```
+ 
+### PHP — Laravel
+```bash
+# Adicione as rotas em routes/api.php (ver comentário no arquivo)
+php artisan serve
+# GET http://localhost:8000/api/inverter/4digitos?numero=2548
+```
+ 
+### Python — puro
+```bash
+python inverter_numero.py
+```
+ 
+### Python — Flask
+```bash
+pip install flask
+python app.py
+# GET http://localhost:5000/inverter/4digitos?numero=2548
+```
+ 
+### C# — puro
+```bash
+dotnet run
+# ou: csc InverterNumero.cs && mono InverterNumero.exe
+```
+ 
+### C# — ASP.NET Core
+```bash
+dotnet new web -n InverterNumeroApi
+# Substitua Program.cs pelo arquivo fornecido
+dotnet run
+# GET http://localhost:5000/inverter/4digitos?numero=2548
+```
+ 
+### COBOL
+```bash
+cobc -x -free InverterNumero.cob -o InverterNumero
+./InverterNumero
+```
+ 
+---
+
+## Lógica dos dois algoritmos
+ 
+**Versão 4 dígitos** (fiel ao livro): extrai cada posição via divisão e módulo por 1000, 100, 10, depois recombina na ordem inversa.
+ 
+**Versão N dígitos**: loop `enquanto > 0` — extrai o dígito menos significativo (`% 10`), acumula (`invertido * 10 + digito`), descarta o dígito (`// 10`).
+
+---
+
+*Pv 16:3*
